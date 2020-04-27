@@ -13,8 +13,4 @@ public class Main {
         System.out.println(marte.saludar());
         girarPlaneta(tierra);
     }
-
-
-
-
 }

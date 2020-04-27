@@ -2,7 +2,7 @@ package com.company;
 
 public class Planeta implements IPlaneta{
     private String name;
-    private int velocidad;
+    private int velocidad = 0;
     private int sentidoDeGiro;
 
 
@@ -26,8 +26,8 @@ public class Planeta implements IPlaneta{
     public void setSentidoDeGiro(int sentidoDeGiro) {
         this.sentidoDeGiro = sentidoDeGiro;
     }
-
-    public int getVelocidad() {
+    @Override
+    public long getVelocidad() {
         return velocidad;
     }
 
@@ -46,8 +46,10 @@ public class Planeta implements IPlaneta{
     }
 
     @Override
-    public long aumentarVelocidad() {
-        return 0;
+    public long aumentarVelocidad()
+    {
+        this.velocidad++;
+        return velocidad;
     }
 
 

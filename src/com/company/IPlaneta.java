@@ -4,4 +4,5 @@ public interface IPlaneta {
     public String girar();
     public String saludar();
     public long aumentarVelocidad();
+    public long getVelocidad();
 }
